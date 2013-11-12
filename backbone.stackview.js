@@ -63,7 +63,11 @@
       var viewOut = lastItem.view;
 
       if (viewOutAnimation !== false) {
-        var popAnimation = _.isString(this.defaultPopAnimation) ? this.defaultPopAnimation : (lastItem.animation !== false ? this.defaultPopAnimation.call(this, lastItem.animation) : 'fadeOut');
+        var popAnimation = _.isString(this.defaultPopAnimation)
+          ? this.defaultPopAnimation
+          : (lastItem.animation !== false
+             ? this.defaultPopAnimation.call(this, lastItem.animation)
+             : 'fadeOut');
         viewOutAnimation || (viewOutAnimation = popAnimation);
         viewOutAnimation = this.animationPrefix + viewOutAnimation;
         var onAnimationEnd = _.bind(function (e) {
