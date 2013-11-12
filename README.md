@@ -13,10 +13,5 @@ slideInBottom and slideOutBottom.
 ## API
 
 ### initialize(options)
-#### options.animationPrefix (String)
-#### options.defaultPushAnimation (String)
-#### options.defaultPopAnimation (String or Function)
-### push(viewIn, [viewInAnimation], [viewOutAnimation], [callback])
-### pop([viewOutAnimation], [viewInAnimation], [callback])
-### replace(viewIn, [viewInAnimation], [viewOutAnimation], [callback])
-### clear()
+### push(viewIn, [viewInAnimation], [viewOutAnimation])
+### pop([viewOutAnimation], [viewInAnimation])
